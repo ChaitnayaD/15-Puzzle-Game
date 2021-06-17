@@ -1,0 +1,9 @@
+.table{
+    display: table;
+    &__row{
+        display: table-row;
+    }
+}
+.cell{
+    display: table-cell;
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.section {
+  font-size: 80px; }
+
+.content {
+  background-image: linear-gradient(to right top, rgba(36, 145, 155, 0.4), rgba(223, 78, 78, 0.8)), url("../images/header.jpg");
+  background-size: cover;
+  width: 1750px;
+  height: 1300px; }
+
+.header {
+  text-align: center;
+  font-size: 68px;
+  font-weight: 700;
+  background-image: linear-gradient(to right top, rgba(150, 237, 245, 0.2), rgba(167, 41, 41, 0.8)); }
+
+.table {
+  display: table; }
+  .table__row {
+    display: table-row; }
+
+.cell {
+  display: table-cell; }
+
+.tile1 {
+  background-image: url("../images/1.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile2 {
+  background-image: url("../images/2.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile3 {
+  background-image: url("../images/3.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile4 {
+  background-image: url("../images/4.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile5 {
+  background-image: url("../images/5.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile6 {
+  background-image: url("../images/6.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile7 {
+  background-image: url("../images/7.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile8 {
+  background-image: url("../images/8.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile9 {
+  background-image: url("../images/9.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile10 {
+  background-image: url("../images/10.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile11 {
+  background-image: url("../images/11.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile12 {
+  background-image: url("../images/12.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile13 {
+  background-image: url("../images/13.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile14 {
+  background-image: url("../images/14.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile15 {
+  background-image: url("../images/15.png");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: table-cell; }
+
+.tile16 {
+  background-image: url("../images/16.jpg");
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  cursor: default;
+  display: table-cell; }
+
+.table {
+  margin-left: 480px;
+  padding-top: 100px; }
