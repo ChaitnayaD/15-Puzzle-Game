@@ -1,0 +1,28 @@
+.btn:link,.btn:visited{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 150px;
+padding-right: 15px;
+
+border-radius: 20px;
+text-decoration: coral;
+transition: all .2s;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active{
+    transform:translateY(-1px) ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-new-game{
+background-color: yellow;
+}
