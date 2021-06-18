@@ -1,28 +1,31 @@
 .btn:link,.btn:visited{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-padding-top: 5px;
-padding-bottom: 5px;
-padding-left: 150px;
-padding-right: 15px;
 
-border-radius: 20px;
+
+border-radius: 30px;
 text-decoration: coral;
 transition: all .2s;
 }
 .btn:hover{
-    transform: translateY(-3px);
+    transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .btn:active{
-    transform:translateY(-1px) ;
+    transform:translateY(-3px) ;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.btn-new-game{
+.btn-new-game:link{
 background-color: yellow;
+align-self: center;
+margin-left: 550px;
+}
+.btn-new-game:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
