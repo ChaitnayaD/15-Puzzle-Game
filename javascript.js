@@ -16,6 +16,7 @@ for (var row=1;row<=4;row++) { //For each row of the 3x3 grid
   } 
 } 
 }
+let count=0;
 
 function clickTile(row,column) {
 
@@ -25,6 +26,8 @@ function clickTile(row,column) {
        if (column<4) {
          if (document.getElementById("cell"+row+(column+1)).className=="tile16") {
            swapTiles("cell"+row+column,"cell"+row+(column+1));
+           count++;
+           if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
            return;
          }
        }
@@ -32,6 +35,7 @@ function clickTile(row,column) {
        if (column>1) {
          if (document.getElementById("cell"+row+(column-1)).className=="tile16") {
            swapTiles("cell"+row+column,"cell"+row+(column-1));
+           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
            return;
          }
        }
@@ -39,6 +43,7 @@ function clickTile(row,column) {
        if (row>1) {
          if (document.getElementById("cell"+(row-1)+column).className=="tile16") {
            swapTiles("cell"+row+column,"cell"+(row-1)+column);
+           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
            return;
          }
        }
@@ -46,12 +51,14 @@ function clickTile(row,column) {
        if (row<4) {
          if (document.getElementById("cell"+(row+1)+column).className=="tile16") {
            swapTiles("cell"+row+column,"cell"+(row+1)+column);
+           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
            return;
          }
        } 
   }
   
 }
+
 
 
 //time counter
@@ -110,7 +117,8 @@ function start(){
 
   if(status == 0 ){
 
-      
+      count=0;
+      document.getElementById("displaymoves").innerHTML= "Moves:"+count;
       interval = window.setInterval(stopWatch, 1000);
       document.getElementById("timer").innerHTML = "New Game";
       status1="reset";

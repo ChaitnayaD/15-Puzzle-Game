@@ -25,9 +25,13 @@ html {
   width: 100%;
   font-size: 55px;
   text-align: center;
-  margin: 0px auto;
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
+  margin: 0px auto; }
+
+#displaymoves {
+  width: 100%;
+  font-size: 55px;
+  text-align: center;
+  margin: 0px auto; }
 
 .table {
   display: table; }
@@ -244,7 +248,7 @@ html {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
 .btn-new-game:link {
-  background-color: yellow;
+  background-color: #00ff0d;
   align-self: center;
   margin-left: 550px; }
 
