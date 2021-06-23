@@ -3,14 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-size: 62.5%;
+}
 .section{
-    font-size: 80px;
+    font-size: 40px;
 }
 .content{
     background-image: linear-gradient(
         to right top,
         rgba(36, 145, 155, 0.4),rgba(223, 78, 78, 0.8)),url("../images/header.jpg");
     background-size: cover;
-    width: 1750px;
+    width: 1520px;
     height: 100vh;
 }

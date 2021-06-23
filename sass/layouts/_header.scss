@@ -7,3 +7,13 @@
         rgba(150, 237, 245, 0.2),rgba(167, 41, 41, 0.8));
         
 }
+#display{
+    width: 100%;
+    font-size: 55px;
+    text-align: center;
+    margin: 0px auto;
+   
+        -webkit-animation: scale-up-center 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+                animation: scale-up-center 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    
+}

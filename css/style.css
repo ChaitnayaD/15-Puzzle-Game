@@ -3,13 +3,16 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 .section {
-  font-size: 80px; }
+  font-size: 40px; }
 
 .content {
   background-image: linear-gradient(to right top, rgba(36, 145, 155, 0.4), rgba(223, 78, 78, 0.8)), url("../images/header.jpg");
   background-size: cover;
-  width: 1750px;
+  width: 1520px;
   height: 100vh; }
 
 .header {
@@ -17,6 +20,14 @@
   font-size: 68px;
   font-weight: 700;
   background-image: linear-gradient(to right top, rgba(150, 237, 245, 0.2), rgba(167, 41, 41, 0.8)); }
+
+#display {
+  width: 100%;
+  font-size: 55px;
+  text-align: center;
+  margin: 0px auto;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
 
 .table {
   display: table; }
@@ -29,150 +40,204 @@
 .tile1 {
   background-image: url("../images/1.png");
   background-size: cover;
+  border-style: solid;
+  border-color: black;
   width: 120px;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 20px; }
 
 .tile2 {
   background-image: url("../images/2.png");
   background-size: cover;
+  border-style: solid;
+  border-color: black;
   width: 120px;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 20px; }
 
 .tile3 {
   background-image: url("../images/3.png");
   background-size: cover;
+  border-style: solid;
+  border-color: black;
   width: 120px;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile4 {
   background-image: url("../images/4.png");
   background-size: cover;
+  border-style: solid;
+  border-color: black;
   width: 120px;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile5 {
   background-image: url("../images/5.png");
   background-size: cover;
+  border-style: solid;
+  border-color: black;
   width: 120px;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile6 {
   background-image: url("../images/6.png");
   background-size: cover;
+  border-style: solid;
+  border-color: black;
   width: 120px;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile7 {
   background-image: url("../images/7.png");
   background-size: cover;
   width: 120px;
   height: 120px;
+  border-style: solid;
+  border-color: black;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile8 {
   background-image: url("../images/8.png");
   background-size: cover;
   width: 120px;
   height: 120px;
+  border-style: solid;
+  border-color: black;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile9 {
   background-image: url("../images/9.png");
   background-size: cover;
   width: 120px;
+  border-style: solid;
+  border-color: black;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile10 {
   background-image: url("../images/10.png");
   background-size: cover;
   width: 120px;
+  border-style: solid;
+  border-color: black;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile11 {
   background-image: url("../images/11.png");
   background-size: cover;
   width: 120px;
+  border-style: solid;
+  border-color: black;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile12 {
   background-image: url("../images/12.png");
   background-size: cover;
   width: 120px;
+  border-style: solid;
+  border-color: black;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile13 {
   background-image: url("../images/13.png");
   background-size: cover;
   width: 120px;
+  border-style: solid;
+  border-color: black;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile14 {
   background-image: url("../images/14.png");
   background-size: cover;
   width: 120px;
+  border-style: solid;
+  border-color: black;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile15 {
   background-image: url("../images/15.png");
   background-size: cover;
   width: 120px;
+  border-style: solid;
+  border-color: black;
   height: 120px;
   cursor: pointer;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .tile16 {
   background-image: url("../images/16.jpg");
   background-size: cover;
   width: 120px;
+  border-style: solid;
+  border-color: black;
   height: 120px;
   cursor: default;
-  display: table-cell; }
+  display: table-cell;
+  border-radius: 15px; }
 
 .table {
   margin-left: 480px;
-  padding-top: 90px; }
+  padding-top: 25px;
+  text-align: center; }
 
 .btn:link, .btn:visited {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 700;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  border-radius: 30px;
-  text-decoration: coral;
-  transition: all .2s; }
+  display: inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #38d610;
+  text-align: center;
+  transition: all 0.15s; }
 
 .btn:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  text-shadow: 0 0 2em white;
+  color: #FFFFFF;
+  border-color: #FFFFFF; }
 
 .btn:active {
   transform: translateY(-3px);
