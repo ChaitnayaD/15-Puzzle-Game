@@ -1,6 +1,6 @@
 .tile11{
     background-image: url("../images/1.png");
-    background-size: cover;
+    background-size: 100% 100%;
     border-style: solid;
     border-color: black;
     width: 120px;
@@ -8,114 +8,178 @@
     cursor: pointer;
     display: table-cell;
     border-radius: 20px;
-    
+    @include respond(phone){
+       
+        background-size: 100% 100%;
+        
+    }
 } 
 .tile12{
     background-image: url("../images/2.png");
-    background-size: cover; border-style: solid;
+    background-size: 100% 100%; border-style: solid;
     border-color: black;
     width: 120px;
     height: 120px;
     cursor: pointer;
-    display: table-cell;border-radius: 20px;
+    display: table-cell;border-radius: 20px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+ 
 .tile13{
     background-image: url("../images/3.png");
-    background-size: cover;
+    background-size: 100% 100%;
    border-style: solid;
    border-color: black;
     width: 120px;
-    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+ 
 .tile14{
     background-image: url("../images/4.png");
-    background-size: cover; border-style: solid;
+    background-size: 100% 100%; border-style: solid;
     border-color: black;
     width: 120px;
     height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    @include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+
 .tile21{
     background-image: url("../images/5.png");
-    background-size: cover; border-style: solid;
+    background-size: 100% 100%; border-style: solid;
     border-color: black;
     width: 120px;
-    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+ 
 .tile22{
     background-image: url("../images/6.png");
-    background-size: cover; border-style: solid;
+    background-size: 100% 100%; border-style: solid;
     border-color: black;
     width: 120px;
-    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+ 
 .tile23{
     background-image: url("../images/7.png");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     height: 120px; border-style: solid;
     border-color: black;
-    cursor: pointer;display: table-cell;border-radius: 15px;
+    cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+
 .tile24{
     background-image: url("../images/8.png");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     height: 120px;
     border-style: solid;
-    border-color: black;cursor: pointer;display: table-cell;border-radius: 15px;
+    border-color: black;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+ 
 .tile31{
     background-image: url("../images/9.png");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     border-style: solid;
     border-color: black;
-    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+ 
 .tile32{
     background-image: url("../images/10.png");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     border-style: solid;
     border-color: black;
-    height: 120px;cursor: pointer;display: table-cell;border-radius:15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius:15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+ 
 .tile33{
     background-image: url("../images/11.png");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     border-style: solid;
     border-color: black;
-    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+
 .tile34{
     background-image: url("../images/12.png");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     border-style: solid;
     border-color: black;
-    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+
 .tile41{
     background-image: url("../images/13.png");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     border-style: solid;
     border-color: black;
-    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+ 
 .tile42{
     background-image: url("../images/14.png");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     border-style: solid;
     border-color: black;
-    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+
 
 .tile43{
     background-image: url("../images/15.png");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     border-style: solid;
     border-color: black;
-    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: pointer;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
+
 .tile44{
     background-image: url("../images/16.jpg");
-    background-size: cover;width: 120px;
+    background-size: 100% 100%;width: 120px;
     border-style: solid;
     border-color: black;
-    height: 120px;cursor: default;display: table-cell;border-radius: 15px;
+    height: 120px;cursor: default;display: table-cell;border-radius: 15px;@include respond(phone){
+       
+        background-size: 100% 100%;
+    }
 } 
