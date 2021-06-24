@@ -418,7 +418,7 @@ html {
   text-align: center; }
   @media (max-width: 600px) {
     .table {
-      margin-left: 0.5em;
+      margin-left: 0.15em;
       padding-top: 0em;
       text-align: left; } }
 
