@@ -160,8 +160,9 @@ function reset1(){
 } 
 
 function refreshPage(){
-  if(confirm("Are you sure, want to Reset?")){
-    location.reload();
+  if(confirm("Are you sure, you want to Reset?")){
+    location.reload(); 
   }				
 }
 
+ 

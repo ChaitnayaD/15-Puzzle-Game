@@ -20,13 +20,18 @@
   </header>
   <div class="content">
      <section class="section">
+         <div class="container">
         <a href="#" id="timer" class="btn btn-new-game" onClick="shuffle(); start(); reset(); ">New Game</a>
-        <a href="#" id="timer" class="btn btn-new-game" onClick=" reset1(); refreshPage() ; ">Reset</a>
-        <div id="displaymoves">Moves: 0</div>
+        <a href="#" id="timer" class="btn btn-reset" onClick="  refreshPage() ; ">Reset</a>
+         </div>
+         <div class="container1">
+        <div id="displaymoves">Moves:0</div>
         <div id="display" >
             00:00:00
         </div>
-        <div id="timer"></div>
+        </div>
+        
+        <div class="containermax">
         <div class="table">
             <div class="table__row">
                 <div id="cell11"  class="tile11"  onClick="clickTile(1,1) ;" > </div>
@@ -53,6 +58,33 @@
                 <div   id="cell44" class="tile44" onClick="clickTile(4,4);"> </div>
             </div>
         </div>
+
+        <div class="container2">
+            <div class="leaderboard">
+                <div class="head">
+                  
+                    <h1>Leader-Board</h1>
+                </div>
+                <div class="bodyleaderboard">
+                    <ol>
+                        <li>
+                            <mark>Chats Dee</mark>
+                            <small>00:00:20</small>
+                        </li>
+                        <li>
+                            <mark>Kim Jong</mark>
+                            <small>00:00:25</small>
+                        </li>
+                        <li>
+                            <mark>Xi Jinping</mark>
+                            <small>00:00:30</small>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
     
     
