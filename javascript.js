@@ -21,10 +21,10 @@ let count=0;
 function clickTile(row,column) {
 
   
-  if (document.getElementById("cell"+row+column).className!= "tile16") { 
+  if (document.getElementById("cell"+row+column).className!= "tile44") { 
        //Checking if white tile on the right
        if (column<4) {
-         if (document.getElementById("cell"+row+(column+1)).className=="tile16") {
+         if (document.getElementById("cell"+row+(column+1)).className=="tile44") {
            swapTiles("cell"+row+column,"cell"+row+(column+1));
            count++;
            if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
@@ -33,7 +33,7 @@ function clickTile(row,column) {
        }
        //Checking if white tile on the left
        if (column>1) {
-         if (document.getElementById("cell"+row+(column-1)).className=="tile16") {
+         if (document.getElementById("cell"+row+(column-1)).className=="tile44") {
            swapTiles("cell"+row+column,"cell"+row+(column-1));
            count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
            return;
@@ -41,7 +41,7 @@ function clickTile(row,column) {
        }
          //Checking if white tile is above
        if (row>1) {
-         if (document.getElementById("cell"+(row-1)+column).className=="tile16") {
+         if (document.getElementById("cell"+(row-1)+column).className=="tile44") {
            swapTiles("cell"+row+column,"cell"+(row-1)+column);
            count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
            return;
@@ -49,7 +49,7 @@ function clickTile(row,column) {
        }
        //Checking if white tile is below
        if (row<4) {
-         if (document.getElementById("cell"+(row+1)+column).className=="tile16") {
+         if (document.getElementById("cell"+(row+1)+column).className=="tile44") {
            swapTiles("cell"+row+column,"cell"+(row+1)+column);
            count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
            return;
@@ -112,7 +112,7 @@ document.getElementById("display").innerHTML = displayHours + ":" + displayMinut
 localStorage.setItem("seconds",seconds);
 
 }
-window.setInterval(stopwatch,1000);
+
 
 
 function start(){
