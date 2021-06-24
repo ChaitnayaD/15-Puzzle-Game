@@ -15,6 +15,14 @@ text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
 background-color:#38d610;
 
 transition: all 0.15s;
+@include respond(phone){
+    
+    margin:0.2em auto;
+   display: block;
+   
+   
+  
+}
 }
 .btn:hover{
 text-shadow: 0 0 2em rgba(255,255,255,1);
@@ -28,12 +36,26 @@ text-shadow: 0 0 2em rgba(255,255,255,1);
 .btn-new-game:link{
 background-color: rgb(0, 255, 13);
 margin-left: 250px;
+@include respond(phone){
+    
+    margin-left: 0px;
+    font-size: 1.5rem;
+    width: fit-content;
+}
 
 ;
 }
 .btn-reset:link{
     background-color: rgb(0, 255, 13);
     margin-left: 450px;
+    @include respond(phone){
+        
+        margin-left: 3rem;
+        margin-top: 0.1rem;
+        width: fit-content;
+        font-size: 1.5rem;
+        
+    }
 }
 .btn-new-game:hover{
     transform: translateY(-10px);

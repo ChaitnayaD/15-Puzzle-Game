@@ -1,7 +1,16 @@
 .table{
     display: table;
     &__row{
-        display: table-row;
+        display: table-row;  margin-left: 20.50rem;
+        padding-top: 2.5rem;
+        text-align: center;
+        
+       
+        
+          
+       
+          
+       
     }
 }
 .cell{

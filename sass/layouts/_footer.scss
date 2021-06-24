@@ -10,8 +10,21 @@ font-style: normal;
 font-variant: normal;
 text-transform: none;
 margin-top: -50px;
+@include respond(phone){
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
 
 }
 .intro{
     text-align: center;
+}
+.copyright{
+    text-align: center;
+    margin-top: 150px;
+    color: chartreuse;
+    font-size: 25px;@include respond(phone){
+        margin-top: 5rem;
+        font-size: 1.5rem;
+    }
 }

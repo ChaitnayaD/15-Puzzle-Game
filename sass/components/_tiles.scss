@@ -3,14 +3,12 @@
     background-size: cover;
     border-style: solid;
     border-color: black;
-    width: 1.2em;
-    height: 1.2em;
+    width: 120px;
+    height: 120px;
     cursor: pointer;
     display: table-cell;
     border-radius: 20px;
-    @include respond(phone){
-      
-    }
+    
 } 
 .tile12{
     background-image: url("../images/2.png");

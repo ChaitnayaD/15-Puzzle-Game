@@ -13,12 +13,13 @@ html {
   background-image: linear-gradient(to right top, rgba(36, 145, 155, 0.4), rgba(223, 78, 78, 0.8)), url("../images/header.jpg");
   background-size: cover;
   width: 152rem;
-  height: 150vh; }
+  height: 150em; }
   @media (max-width: 600px) {
     .content {
-      max-width: 80%;
+      width: 100%;
       font-size: 5em;
-      max-height: fit-content; } }
+      height: 100%;
+      background-size: cover; } }
 
 #display {
   width: 100%;
@@ -74,6 +75,12 @@ html {
   margin-left: 700px;
   margin-top: 0px;
   margin-top: -250px; }
+  @media (max-width: 600px) {
+    .container2 {
+      display: none;
+      width: 50%;
+      height: auto;
+      margin-top: 150px; } }
 
 /* leaderboard */
 .leaderboard {
@@ -136,7 +143,9 @@ html {
   @media (max-width: 600px) {
     .header {
       width: 100%;
-      font-size: 4.42rem; } }
+      height: fit-content;
+      font-size: 4.42rem;
+      background-size: 100%; } }
 
 .footer {
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -150,14 +159,31 @@ html {
   font-variant: normal;
   text-transform: none;
   margin-top: -50px; }
+  @media (max-width: 600px) {
+    .footer {
+      margin-top: 5rem;
+      font-size: 1.5rem; } }
 
 .intro {
   text-align: center; }
 
+.copyright {
+  text-align: center;
+  margin-top: 150px;
+  color: chartreuse;
+  font-size: 25px; }
+  @media (max-width: 600px) {
+    .copyright {
+      margin-top: 5rem;
+      font-size: 1.5rem; } }
+
 .table {
   display: table; }
   .table__row {
-    display: table-row; }
+    display: table-row;
+    margin-left: 20.50rem;
+    padding-top: 2.5rem;
+    text-align: center; }
 
 .cell {
   display: table-cell; }
@@ -167,8 +193,8 @@ html {
   background-size: cover;
   border-style: solid;
   border-color: black;
-  width: 1.2em;
-  height: 1.2em;
+  width: 120px;
+  height: 120px;
   cursor: pointer;
   display: table-cell;
   border-radius: 20px; }
@@ -342,6 +368,11 @@ html {
   margin-left: 20.50rem;
   padding-top: 2.5rem;
   text-align: center; }
+  @media (max-width: 600px) {
+    .table {
+      margin-left: 1em;
+      padding-top: 0em;
+      text-align: left; } }
 
 .btn:link, .btn:visited {
   float: left;
@@ -358,6 +389,10 @@ html {
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   background-color: #38d610;
   transition: all 0.15s; }
+  @media (max-width: 600px) {
+    .btn:link, .btn:visited {
+      margin: 0.2em auto;
+      display: block; } }
 
 .btn:hover {
   text-shadow: 0 0 2em white;
@@ -371,10 +406,21 @@ html {
 .btn-new-game:link {
   background-color: #00ff0d;
   margin-left: 250px; }
+  @media (max-width: 600px) {
+    .btn-new-game:link {
+      margin-left: 0px;
+      font-size: 1.5rem;
+      width: fit-content; } }
 
 .btn-reset:link {
   background-color: #00ff0d;
   margin-left: 450px; }
+  @media (max-width: 600px) {
+    .btn-reset:link {
+      margin-left: 3rem;
+      margin-top: 0.1rem;
+      width: fit-content;
+      font-size: 1.5rem; } }
 
 .btn-new-game:hover {
   transform: translateY(-10px);

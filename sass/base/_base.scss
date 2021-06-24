@@ -16,11 +16,13 @@ html{
         rgba(36, 145, 155, 0.4),rgba(223, 78, 78, 0.8)),url("../images/header.jpg");
     background-size: cover;
     width: 152rem;
-   height: 150vh;
+   height: 150em;
    @include respond(phone){
-    max-width: 80%;
+    width: 100%;
+    
     font-size: 5em;
-    max-height: fit-content;
+     height: 100%;
+   background-size: cover;
    
 }
     

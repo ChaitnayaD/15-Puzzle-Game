@@ -5,7 +5,11 @@
    text-align: center;
    
    
-     
+     @include respond(phone){
+        margin-left: 1em;
+        padding-top: 0em;
+        text-align: left;
+     }
   
       
 }

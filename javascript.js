@@ -2,6 +2,7 @@ function swapTiles(cell1,cell2) {
   var temp = document.getElementById(cell1).className;
   document.getElementById(cell1).className = document.getElementById(cell2).className;
   document.getElementById(cell2).className = temp;
+ 
 }
 
 function shuffle() {
