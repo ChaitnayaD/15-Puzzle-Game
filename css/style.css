@@ -13,25 +13,37 @@ html {
   background-image: linear-gradient(to right top, rgba(36, 145, 155, 0.4), rgba(223, 78, 78, 0.8)), url("../images/header.jpg");
   background-size: cover;
   width: 1520px;
-  height: 100vh; }
-
-.header {
-  text-align: center;
-  font-size: 68px;
-  font-weight: 700;
-  background-image: linear-gradient(to right top, rgba(150, 237, 245, 0.2), rgba(167, 41, 41, 0.8)); }
+  height: 150vh; }
+  @media (max-width: 600px) {
+    .content {
+      width: 100%;
+      height: 50%; } }
 
 #display {
   width: 100%;
   font-size: 55px;
   text-align: center;
   margin: 0px auto; }
+  @media (max-width: 600px) {
+    #display {
+      width: 100%;
+      height: 50%; } }
 
 #displaymoves {
   width: 100%;
   font-size: 55px;
   text-align: center;
   margin: 0px auto; }
+  @media (max-width: 600px) {
+    #displaymoves {
+      width: 100%;
+      height: 50%; } }
+
+.header {
+  text-align: center;
+  font-size: 68px;
+  font-weight: 700;
+  background-image: linear-gradient(to right top, rgba(150, 237, 245, 0.2), rgba(167, 41, 41, 0.8)); }
 
 .table {
   display: table; }
@@ -235,7 +247,6 @@ html {
   color: #000000;
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   background-color: #38d610;
-  text-align: center;
   transition: all 0.15s; }
 
 .btn:hover {
