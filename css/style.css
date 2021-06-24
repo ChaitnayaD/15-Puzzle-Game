@@ -12,20 +12,45 @@ html {
 .content {
   background-image: linear-gradient(to right top, rgba(36, 145, 155, 0.4), rgba(223, 78, 78, 0.8)), url("../images/header.jpg");
   background-size: cover;
-  width: 1520px;
+  width: 152rem;
   height: 150vh; }
+  @media (max-width: 600px) {
+    .content {
+      max-width: 80%;
+      font-size: 5em;
+      max-height: fit-content; } }
 
 #display {
   width: 100%;
   font-size: 55px;
   text-align: center;
-  margin: 0px auto; }
+  margin: 0px auto;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 50px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none; }
 
 #displaymoves {
   width: 100%;
   font-size: 55px;
   text-align: center;
-  margin: 0px auto; }
+  margin: 0px auto;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 50px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none; }
 
 .blog {
   font-size: 14px;
@@ -104,9 +129,30 @@ html {
 
 .header {
   text-align: center;
-  font-size: 68px;
+  font-size: 6.8rem;
   font-weight: 700;
+  width: auto;
   background-image: linear-gradient(to right top, rgba(150, 237, 245, 0.2), rgba(167, 41, 41, 0.8)); }
+  @media (max-width: 600px) {
+    .header {
+      width: 100%;
+      font-size: 4.42rem; } }
+
+.footer {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 30px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  margin-top: -50px; }
+
+.intro {
+  text-align: center; }
 
 .table {
   display: table; }
@@ -121,8 +167,8 @@ html {
   background-size: cover;
   border-style: solid;
   border-color: black;
-  width: 120px;
-  height: 120px;
+  width: 1.2em;
+  height: 1.2em;
   cursor: pointer;
   display: table-cell;
   border-radius: 20px; }
@@ -293,8 +339,8 @@ html {
   border-radius: 15px; }
 
 .table {
-  margin-left: 480px;
-  padding-top: 25px;
+  margin-left: 20.50rem;
+  padding-top: 2.5rem;
   text-align: center; }
 
 .btn:link, .btn:visited {
@@ -308,6 +354,7 @@ html {
   font-family: 'Roboto',sans-serif;
   font-weight: 300;
   color: #000000;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   background-color: #38d610;
   transition: all 0.15s; }

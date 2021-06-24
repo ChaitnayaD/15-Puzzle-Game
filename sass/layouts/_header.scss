@@ -1,9 +1,16 @@
 .header{
     text-align: center;
-    font-size: 68px;
+    font-size: 6.8rem;
     font-weight: 700;
+    width: auto;
     background-image: linear-gradient(
         to right top,
         rgba(150, 237, 245, 0.2),rgba(167, 41, 41, 0.8));
+        @include respond(phone){
+            width: 100%;
+            font-size:4.42rem;
+           
+        }
         
 }
+

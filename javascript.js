@@ -166,3 +166,17 @@ function refreshPage(){
 }
 
  
+function checkwin(){
+  let win=0;
+  for (let i = 1; i <=4; i++) {
+    for (let j = 1; j <=4; j++) {
+      if(document.getElementById("cell"+i+j).className==("tile"+i+j)){
+                  win++;
+      }
+      if(win==16){
+       alert("u win");  }
+    }
+    
+  }
+  
+}

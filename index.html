@@ -21,8 +21,8 @@
   <div class="content">
      <section class="section">
          <div class="container">
-        <a href="#" id="timer" class="btn btn-new-game" onClick="shuffle(); start(); reset(); ">New Game</a>
-        <a href="#" id="timer" class="btn btn-reset" onClick="  refreshPage() ; ">Reset</a>
+        <a href="#" id="timer" class="btn btn-new-game" onClick="shuffle(); start(); reset();  ">New Game</a>
+        <a href="#" id="timer" class="btn btn-reset" onClick="  refreshPage(); ">Reset</a>
          </div>
          <div class="container1">
         <div id="displaymoves">Moves:0</div>
@@ -33,6 +33,7 @@
         
         <div class="containermax">
         <div class="table">
+            
             <div class="table__row">
                 <div id="cell11"  class="tile11"  onClick="clickTile(1,1) ;" > </div>
                 <div  id="cell12"  class="tile12"  onClick="clickTile(1,2);"> </div>
@@ -55,7 +56,7 @@
                 <div  id="cell41" class=" tile41"  onClick="clickTile(4,1);"> </div>
                 <div  id="cell42" class="tile42"  onClick="clickTile(4,2);"> </div>
                 <div  id="cell43" class="tile43"  onClick="clickTile(4,3);"> </div>
-                <div   id="cell44" class="tile44" onClick="clickTile(4,4);"> </div>
+                <div   id="cell44" class="tile44" onClick="clickTile(4,4);  "> </div>
             </div>
         </div>
 
@@ -85,6 +86,13 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="intro">
+            <h2>INSTRUCTIONS</h2>
+                <p>Arrange Tiles in grid to order them from 1 to 15. To move a tile you can click on it . </p>  
+        </div>
+    </footer>
+    
     </section>
     
     
