@@ -27,33 +27,33 @@ function clickTile(row,column) {
        //Checking if white tile on the right
        if (column<4) {
          if (document.getElementById("cell"+row+(column+1)).className=="tile44") {
-           swapTiles("cell"+row+column,"cell"+row+(column+1));
+           swapTiles("cell"+row+column,"cell"+row+(column+1));currentposition();
            count++;
-           if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} currentposition();
+           if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} 
            return;
          }
        }
        //Checking if white tile on the left
        if (column>1) {
          if (document.getElementById("cell"+row+(column-1)).className=="tile44") {
-           swapTiles("cell"+row+column,"cell"+row+(column-1));
-           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} currentposition();
+           swapTiles("cell"+row+column,"cell"+row+(column-1));currentposition();
+           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} 
            return;
          }
        }
          //Checking if white tile is above
        if (row>1) {
          if (document.getElementById("cell"+(row-1)+column).className=="tile44") {
-           swapTiles("cell"+row+column,"cell"+(row-1)+column);
-           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} currentposition();
+           swapTiles("cell"+row+column,"cell"+(row-1)+column);currentposition();
+           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
            return;
          }
        }
        //Checking if white tile is below
        if (row<4) {
          if (document.getElementById("cell"+(row+1)+column).className=="tile44") {
-           swapTiles("cell"+row+column,"cell"+(row+1)+column);
-           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} currentposition();
+           swapTiles("cell"+row+column,"cell"+(row+1)+column);currentposition();
+           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} 
            return;
          }
        } 
