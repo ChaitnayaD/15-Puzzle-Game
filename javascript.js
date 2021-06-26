@@ -2,7 +2,7 @@ function swapTiles(cell1,cell2) {
   var temp = document.getElementById(cell1).className;
   document.getElementById(cell1).className = document.getElementById(cell2).className;
   document.getElementById(cell2).className = temp;
- 
+  currentposition();
  
 }
 
@@ -183,7 +183,7 @@ let win=0;
 
 function currentposition() {
 var store = new Array(10);
-for (var i = 0; i <4; i++) {
+for (var i = 1; i <=4; i++) {
   store[i] = new Array(10);
 }
 for (var i = 1; i <= 4; i++) {
@@ -191,15 +191,17 @@ for (var i = 1; i <= 4; i++) {
       store[i][j] = document.getElementById("cell"+i+j).className;
       if(store[i][j]=="tile"+i+j){
         win++;
-        if(win==16){
-          alert("u won"); 
-          win=0;break;
-  
        }
+       
       }
       
       
   }
-   }
-  
-}
+  if(win==15){
+    win=0;
+    alert("Congratulations You solved the puzzle in"+" " + count +" "+"Moves");
+refreshPage1();
+  }else{
+    win=0;
+  }
+  }
