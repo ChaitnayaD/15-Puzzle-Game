@@ -28,6 +28,11 @@ transition: all 0.15s;
 text-shadow: 0 0 2em rgba(255,255,255,1);
     color:#FFFFFF;
     border-color:#FFFFFF;
+    @include respond(phone){
+    
+        display: none;
+    }
+    
 }
 .btn:active{
     transform:translateY(-3px) ;

@@ -446,6 +446,9 @@ html {
   text-shadow: 0 0 2em white;
   color: #FFFFFF;
   border-color: #FFFFFF; }
+  @media (max-width: 600px) {
+    .btn:hover {
+      display: none; } }
 
 .btn:active {
   transform: translateY(-3px);
