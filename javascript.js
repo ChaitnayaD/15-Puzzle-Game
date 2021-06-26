@@ -167,6 +167,11 @@ function refreshPage(){
     location.reload(); 
   }				
 }
+function refreshPage1(){
+  
+    location.reload(); 
+  
+}
 
 let win=0;
 
@@ -182,8 +187,8 @@ for (var i = 1; i <= 4; i++) {
         win++;
         
       }
-      if(win==16){alert("u won");}
+      if(win==16){alert("u won"); refreshPage1();}
   }
    }
-   refreshPage();
+  
 }
