@@ -2,7 +2,7 @@ function swapTiles(cell1,cell2) {
   var temp = document.getElementById(cell1).className;
   document.getElementById(cell1).className = document.getElementById(cell2).className;
   document.getElementById(cell2).className = temp;
-  
+ 
  
 }
 
@@ -22,43 +22,49 @@ let count=0;
 
 function clickTile(row,column) {
 
- 
+  
   if (document.getElementById("cell"+row+column).className!= "tile44") { 
+    
        //Checking if white tile on the right
        if (column<4) {
          if (document.getElementById("cell"+row+(column+1)).className=="tile44") {
-           swapTiles("cell"+row+column,"cell"+row+(column+1));currentposition();
+           swapTiles("cell"+row+column,"cell"+row+(column+1));
            count++;
-           if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} 
+           if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;
+          } 
            return;
          }
        }
        //Checking if white tile on the left
        if (column>1) {
          if (document.getElementById("cell"+row+(column-1)).className=="tile44") {
-           swapTiles("cell"+row+column,"cell"+row+(column-1));currentposition();
-           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} 
+           swapTiles("cell"+row+column,"cell"+row+(column-1));
+           count++;
+           ;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} 
            return;
          }
        }
          //Checking if white tile is above
        if (row>1) {
          if (document.getElementById("cell"+(row-1)+column).className=="tile44") {
-           swapTiles("cell"+row+column,"cell"+(row-1)+column);currentposition();
-           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
+           swapTiles("cell"+row+column,"cell"+(row-1)+column);
+           count++;
+           ;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;}
            return;
          }
        }
        //Checking if white tile is below
        if (row<4) {
          if (document.getElementById("cell"+(row+1)+column).className=="tile44") {
-           swapTiles("cell"+row+column,"cell"+(row+1)+column);currentposition();
-           count++;if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} 
+           swapTiles("cell"+row+column,"cell"+(row+1)+column);
+           count++;
+           if(seconds>0){document.getElementById("displaymoves").innerHTML= "Moves:"+count;} 
            return;
          }
        } 
+       
   }
- 
+  
   
 }
 
@@ -168,7 +174,7 @@ function refreshPage(){
   }				
 }
 function refreshPage1(){
-  
+ 
     location.reload(); 
   
 }
@@ -176,18 +182,23 @@ function refreshPage1(){
 let win=0;
 
 function currentposition() {
-var store = new Array(4);
+var store = new Array(10);
 for (var i = 0; i <4; i++) {
-  store[i] = new Array(4);
+  store[i] = new Array(10);
 }
 for (var i = 1; i <= 4; i++) {
   for (var j = 1; j <= 4; j++) {
       store[i][j] = document.getElementById("cell"+i+j).className;
       if(store[i][j]=="tile"+i+j){
         win++;
-        
+        if(win==16){
+          alert("u won"); 
+          win=0;break;
+  
+       }
       }
-      if(win==16){alert("u won"); refreshPage1();}
+      
+      
   }
    }
   
