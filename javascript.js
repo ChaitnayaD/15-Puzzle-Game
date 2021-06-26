@@ -185,5 +185,5 @@ for (var i = 1; i <= 4; i++) {
       if(win==16){alert("u won");}
   }
    }
-   reset1();
+   refreshPage();
 }
