@@ -199,8 +199,11 @@ for (var i = 1; i <= 4; i++) {
   }
   if(win==15){
     win=0;
-    alert("Congratulations You solved the puzzle in"+" " + count +" "+"Moves");
-refreshPage1();
+   if(seconds==0){
+     alert("Please start New Game");
+   } else{
+   alert("Congratulations , You solved the puzzle in"+" " + count +" "+"Moves" +"\r\n"+ "Time Taken :"+" " + displayHours + ":" + displayMinutes + ":" + displaySeconds);
+   refreshPage1();}
   }else{
     win=0;
   }
