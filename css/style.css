@@ -522,6 +522,10 @@ html {
 .btn1-background:hover {
   transform: translateY(10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 600px) {
+    .btn1-background:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); } }
 
 .container {
   display: inline-block; }
@@ -550,6 +554,7 @@ html {
   padding: 0px;
   width: 125px;
   height: 115px;
+  z-index: 1;
   text-align: center;
   font-size: 25px; }
   @media (max-width: 600px) {
@@ -558,16 +563,10 @@ html {
       font-size: 50%;
       width: 50%; } }
 
-.dropdown-content a:hover {
-  background-color: #00ff55; }
-
 .dropdown-content a {
   color: white;
   position: absolute;
   text-align: center;
-  display: block; }
-
-.dropdown:hover .dropdown-content {
   display: block; }
 
 .dropdown:active .dropdown-content {
@@ -577,3 +576,6 @@ html {
       margin-top: 70px;
       font-size: 50%;
       width: 65%; } }
+
+.show {
+  display: block; }

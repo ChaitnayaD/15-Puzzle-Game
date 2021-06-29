@@ -114,9 +114,13 @@ margin-left: 250px;
         margin-top: 0px;
     }
 }
-.btn1-background:hover{
+.btn1-background:hover {
     transform: translateY(10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    @include respond(phone){
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
 }
 .container{
     display: inline-block;
@@ -158,7 +162,7 @@ margin-left: 250px;
     padding: 0px;
     width:125px;
     height: 115px;
-
+    z-index: 1;
     text-align: center;
     font-size: 25px;
     @include respond(phone){
@@ -172,18 +176,14 @@ margin-left: 250px;
    
    
   }
-  .dropdown-content a:hover {background-color: #00ff55}
+  
   .dropdown-content a {
     color: white;
    position: absolute;
    text-align: center;
     display: block;}
   
-  .dropdown:hover .dropdown-content {
-    display: block;
-    
-      
-  }
+ 
   .dropdown:active .dropdown-content{
       display: block;
       @include respond(phone){
@@ -194,4 +194,7 @@ margin-left: 250px;
           width: 65%;
          
        }
+  }
+  .show{
+      display: block;
   }
