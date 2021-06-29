@@ -199,7 +199,7 @@ for (var i = 1; i <= 4; i++) {
   }
   if(win==15){
     win=0;
-   if(seconds==0){
+   if(seconds==0 && minutes==0 && hours==0){
      alert("Please start New Game");
    } else{
    alert("Congratulations , You solved the puzzle in"+" " + count +" "+"Moves" +"\r\n"+ "Time Taken :"+" " + displayHours + ":" + displayMinutes + ":" + displaySeconds);
@@ -229,7 +229,7 @@ function bg2(){
       
       // Close the dropdown if the user clicks outside of it
       window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
+        if (!event.target.matches('.btn1-background')) {
           var dropdowns = document.getElementsByClassName("dropdown-content");
           var i;
           for (i = 0; i < dropdowns.length; i++) {
