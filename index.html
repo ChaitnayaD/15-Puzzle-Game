@@ -15,14 +15,26 @@
   <header class="header">
       <div class="header__head">
          15-PUZZLE GAME
+         
       </div>
       
   </header>
-  <div class="content">
+  <div id="content">
      <section class="section">
          <div class="container">
         <a href="#" id="timer" class="btn btn-new-game" onClick="shuffle(); start(); reset();  ">New Game</a>
+       
         <a href="#" id="timer" class="btn btn-reset" onClick="  refreshPage();reset1; ">Reset</a>
+        <div class="dropdown">
+            <a href="#"  class="btn1 btn1-background " >Background</a>
+            <div class="dropdown-content">
+                <a href="#" onClick=" bg1();">Mountains</a><br>
+                <a href="#" onClick=" bg2();">Sea</a><br>
+                <a href="#" onClick=" bg3();">Night</a><br>
+                <a href="#" onClick=" bg4();">Default</a>
+              </div>
+        </div>
+        
          </div>
          <div class="container1">
         <div id="displaymoves">Moves:0</div>

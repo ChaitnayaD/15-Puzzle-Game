@@ -208,3 +208,15 @@ for (var i = 1; i <= 4; i++) {
     win=0;
   }
   }
+function bg1(){
+document.getElementById("content").style.backgroundImage= "url('images/bg1.jpg')";
+}
+function bg2(){
+  document.getElementById("content").style.backgroundImage= "url('images/bg2.jpg')";
+  }
+  function bg3(){
+    document.getElementById("content").style.backgroundImage= "url('images/bg3.jpg')";
+    }
+    function bg4(){
+      document.getElementById("content").style.backgroundImage= "url('images/header.jpg')";
+      }

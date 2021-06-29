@@ -23,6 +23,30 @@ transition: all 0.15s;
    
   
 }
+
+}
+.btn1:link,.btn1:visited{
+    float: left;
+    padding:0.20em 0.8em;
+    border:0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+font-family: "Comic Sans MS", cursive, sans-serif;
+text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+background-color:#1087d6;
+@include respond(phone){
+    
+    margin:0.2em auto;
+   display: block;
+   
+   
+  
+}
 }
 .btn:hover{
 text-shadow: 0 0 2em rgba(255,255,255,1);
@@ -30,7 +54,17 @@ text-shadow: 0 0 2em rgba(255,255,255,1);
     border-color:#FFFFFF;
     
 }
+.btn1:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+        color:#FFFFFF;
+        border-color:#FFFFFF;
+        
+    }
 .btn:active{
+    transform:translateY(-3px) ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn1:active{
     transform:translateY(-3px) ;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -66,6 +100,24 @@ margin-left: 250px;
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+.btn1-background:link{
+    background-color: rgb(255, 145, 0);
+    margin-left: 100px;
+    margin-top: -190px;
+    margin-bottom: 0;
+    cursor: pointer;
+    @include respond(phone){
+    
+        margin-left: 70px;
+        font-size: 1.5rem;
+        width: fit-content;
+        margin-top: 0px;
+    }
+}
+.btn1-background:hover{
+    transform: translateY(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 .container{
     display: inline-block;
 }
@@ -80,3 +132,66 @@ margin-left: 250px;
     margin-top: 0px;
     
 }
+
+
+//dropdown background
+
+.dropdown {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    @include respond(phone){
+    
+        margin:0.2em auto;
+       display: block;
+       
+       
+      
+    }
+    
+  }
+  .dropdown-content {
+    display: none;
+    position:relative;
+    background-color: crimson;
+    margin-top: 0px;
+    padding: 0px;
+    width:125px;
+    height: 115px;
+
+    text-align: center;
+    font-size: 25px;
+    @include respond(phone){
+    
+       
+     margin-top: 70px;
+       font-size: 50%;
+       width: 50%;
+      
+    }
+   
+   
+  }
+  .dropdown-content a:hover {background-color: #00ff55}
+  .dropdown-content a {
+    color: white;
+   position: absolute;
+   text-align: center;
+    display: block;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+      
+  }
+  .dropdown:active .dropdown-content{
+      display: block;
+      @include respond(phone){
+    
+       
+        margin-top: 70px;
+          font-size: 50%;
+          width: 65%;
+         
+       }
+  }
