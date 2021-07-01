@@ -43,9 +43,7 @@ background-color:#1087d6;
     
     margin:0.2em auto;
    display: block;
-   
-   
-  
+    
 }
 }
 .btn:hover{
@@ -67,6 +65,9 @@ text-shadow: 0 0 2em rgba(255,255,255,1);
 .btn1:active{
     transform:translateY(-3px) ;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    @include respond(phone){
+        transform: none;
+    }
 }
 .btn-new-game:link{
 background-color: rgb(0, 255, 13);
@@ -114,12 +115,14 @@ margin-left: 250px;
     margin-top: -190px;
     margin-bottom: 0;
     cursor: pointer;
+   
     @include respond(phone){
     
         margin-left: 70px;
         font-size: 1.5rem;
         width: fit-content;
         margin-top: 0px;
+
     }
 }
 .btn1-background:hover {
@@ -164,7 +167,7 @@ margin-left: 250px;
   }
   .dropdown-content {
     display: none;
-    position:relative;
+    position:absolute;
     background-color: rgb(245, 238, 238);
     margin-top: 0px;
     padding: 0px;
@@ -173,7 +176,8 @@ margin-left: 250px;
     z-index: 1;
     text-align: center;
     font-size: 25px;
-    
+   
+    transform: none;
     @include respond(phone){
     
        
@@ -190,23 +194,28 @@ margin-left: 250px;
     color: rgb(73, 70, 70);
    position: absolute;
    text-align: center;
-    display: block;}
+    display: block;
+    
+   
+
+}
     .dropdown-content a:hover{
         background-color: blanchedalmond;
         background-size: 100% 100%;
     }
- 
-  .dropdown:active .dropdown-content{
-      display: block;
-      @include respond(phone){
-    
-       
-        margin-top: 70px;
-          font-size: 50%;
-          width: 65%;
+    .dropdown:active .dropdown-content  {
+        display: block;
+        @include respond(phone){
+      
          
-       }
-  }
+          margin-top: 70px;
+            font-size: 50%;
+            width: 65%;
+           
+         }
+    }
+ 
+  
   .show{
       display: block;
       

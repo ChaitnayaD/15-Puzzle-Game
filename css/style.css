@@ -478,6 +478,9 @@ html {
 .btn1:active {
   transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 600px) {
+    .btn1:active {
+      transform: none; } }
 
 .btn-new-game:link {
   background-color: #00ff0d;
@@ -556,7 +559,7 @@ html {
 
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   background-color: #f5eeee;
   margin-top: 0px;
   padding: 0px;
@@ -564,7 +567,8 @@ html {
   height: 115px;
   z-index: 1;
   text-align: center;
-  font-size: 25px; }
+  font-size: 25px;
+  transform: none; }
   @media (max-width: 600px) {
     .dropdown-content {
       margin-top: 70px;
