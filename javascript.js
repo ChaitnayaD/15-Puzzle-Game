@@ -3,18 +3,19 @@ function swapTiles(cell1,cell2) {
   document.getElementById(cell1).className = document.getElementById(cell2).className;
   document.getElementById(cell2).className = temp;
   currentposition();
- 
+
+  
 }
 
 function shuffle() {
-//Use nested loops to access each cell of the 3x3 grid
-for (var row=1;row<=4;row++) { //For each row of the 3x3 grid
-   for (var column=1;column<=4;column++) { //For each column in this row
+
+for (var row=1;row<=4;row++) { 
+   for (var column=1;column<=4;column++) { 
   
-    var row2=Math.floor(Math.random()*4 + 1); //Pick a random row from 1 to 4
-    var column2=Math.floor(Math.random()*4 + 1); //Pick a random column from 1 to 4
+    var row2=Math.floor(Math.random()*4 + 1); 
+    var column2=Math.floor(Math.random()*4 + 1); 
      
-    swapTiles("cell"+row+column,"cell"+row2+column2); //Swap the look & feel of both cells
+    swapTiles("cell"+row+column,"cell"+row2+column2); 
   } 
 } 
 }
@@ -115,11 +116,12 @@ if(hours < 10){
 else{
     displayHours = hours;
 }
-
+challenge(seconds);
 //Display updated time values to user
 document.getElementById("display").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
 localStorage.setItem("seconds",seconds);
 
+ 
 }
 
 
@@ -240,3 +242,25 @@ function bg2(){
           }
         }
       }
+
+let counters=0;
+
+      function challenge(second){
+        if(counters==1){
+        var rowswap1 =Math.floor(Math.random()*4 + 1);
+        var colswap1 =Math.floor(Math.random()*4 + 1);
+        var rowswap2 =Math.floor(Math.random()*4 + 1);
+        var colswap2 =Math.floor(Math.random()*4 + 1);
+
+        if((second%7)==0 && counters==1){swapTiles("cell"+rowswap1+colswap1,"cell"+rowswap2+colswap2)
+      };
+      }
+    }
+      function challengealert(){
+        counters=1;
+        alert("After the game starts , at every 7 seconds , 2 tiles will swap randomly " +"\r\n"  +"\r\n" +"                              "+ "Show your skills here");
+     
+    }
+     function challengefix(){
+       counters=2;
+     }

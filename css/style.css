@@ -10,7 +10,7 @@ html {
   font-size: 40px; }
 
 #content {
-  background-image: linear-gradient(to right top, rgba(36, 145, 155, 0.4), rgba(223, 78, 78, 0.8)), url("../images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-size: cover;
   width: 152rem;
   height: 150em; }
@@ -489,17 +489,33 @@ html {
     .btn-new-game:link {
       margin-left: 0px;
       font-size: 1.5rem;
-      width: fit-content; } }
+      width: fit-content;
+      display: inline-block;
+      margin-top: -0.4em;
+      margin-bottom: 0.4em; } }
 
 .btn-reset:link {
   background-color: #00ff0d;
-  margin-left: 450px; }
+  margin-left: 50px; }
   @media (max-width: 600px) {
     .btn-reset:link {
-      margin-left: 3rem;
-      margin-top: 0.1rem;
+      margin-left: 1.5em;
+      margin-top: -0.4em;
       width: fit-content;
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      display: inline-block;
+      margin-bottom: 0.5em; } }
+
+.btn-challenge:link {
+  background-color: #00ff0d;
+  margin-left: 50px; }
+  @media (max-width: 600px) {
+    .btn-challenge:link {
+      display: inline-block;
+      margin-left: 1.5em;
+      font-size: 1.5rem;
+      width: fit-content;
+      margin-top: -0.35em; } }
 
 .btn-new-game:hover {
   transform: translateY(-10px);
@@ -517,6 +533,13 @@ html {
       transform: none;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); } }
 
+.btn-challenge:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 600px) {
+    .btn-challenge:hover {
+      transform: none; } }
+
 .btn1-background:link {
   background-color: #ff9100;
   margin-left: 100px;
@@ -525,13 +548,14 @@ html {
   cursor: pointer; }
   @media (max-width: 600px) {
     .btn1-background:link {
-      margin-left: 70px;
+      margin-left: 0.18em;
       font-size: 1.5rem;
       width: fit-content;
-      margin-top: 0px; } }
+      margin-top: 0.2em;
+      position: relative; } }
 
 .btn1-background:hover {
-  transform: translateY(10px);
+  transform: translateY(5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
   @media (max-width: 600px) {
     .btn1-background:hover {
@@ -561,24 +585,25 @@ html {
   display: none;
   position: absolute;
   background-color: #f5eeee;
-  margin-top: 0px;
+  margin-top: 10px;
   padding: 0px;
   width: 125px;
   height: 115px;
   z-index: 1;
   text-align: center;
   font-size: 25px;
+  margin-left: 100px;
   transform: none; }
   @media (max-width: 600px) {
     .dropdown-content {
       margin-top: 70px;
       font-size: 50%;
-      width: 50%; } }
+      width: 35%; } }
 
 .dropdown-content a {
   color: #494646;
   position: absolute;
-  text-align: center;
+  align-items: center;
   display: block; }
 
 .dropdown-content a:hover {
@@ -586,12 +611,13 @@ html {
   background-size: 100% 100%; }
 
 .dropdown:active .dropdown-content {
-  display: block; }
+  display: block;
+  position: absolute; }
   @media (max-width: 600px) {
     .dropdown:active .dropdown-content {
       margin-top: 70px;
       font-size: 50%;
-      width: 65%; } }
+      width: 35%; } }
 
 .show {
   display: block; }

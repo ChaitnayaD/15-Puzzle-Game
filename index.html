@@ -22,9 +22,11 @@
   <div id="content">
      <section class="section">
          <div class="container">
-        <a href="#" id="timer" class="btn btn-new-game" onClick="shuffle(); start(); reset();  ">New Game</a>
+             <nav>
+        <a href="#" id="timer" class="btn btn-new-game" onClick=" challengefix(); shuffle(); start(); reset(); challengefix(); ">New Game</a>
        
         <a href="#" id="timer" class="btn btn-reset" onClick="  refreshPage();reset1; ">Reset</a>
+        <a href="#" id="timer" class="btn btn-challenge" onclick= " challengealert(); shuffle(); start(); reset(); " >Challenge</a>
         <div class="dropdown">
             <a href="#"  class="btn1 btn1-background  " onclick="myFunction()" >Background</a>
             <div id="mydrop" class="dropdown-content">
@@ -34,7 +36,7 @@
                 <a href="#" onClick=" bg4();">Default</a>
               </div>
         </div>
-        
+    </nav>
          </div>
          <div class="container1">
         <div id="displaymoves">Moves:0</div>

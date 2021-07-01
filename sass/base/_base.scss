@@ -11,9 +11,7 @@ html{
     font-size: 40px;
 }
 #content{
-    background-image: linear-gradient(
-        to right top,
-        rgba(36, 145, 155, 0.4),rgba(223, 78, 78, 0.8)),url("../images/header.jpg");
+    background-image: url("../images/header.jpg");
      background-size: cover;
      width: 152rem;
      height: 150em;
