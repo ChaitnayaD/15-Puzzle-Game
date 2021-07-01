@@ -252,18 +252,18 @@ let counters=0;
 
       function challenge(second){
         if(counters==1){
-        var rowswap1 =Math.floor(Math.random()*4 + 1);
+        var rowswap1 =Math.floor(Math.random()*2 + 3);
         var colswap1 =Math.floor(Math.random()*4 + 1);
-        var rowswap2 =Math.floor(Math.random()*4 + 1);
+        var rowswap2 =Math.floor(Math.random()*2 + 3);
         var colswap2 =Math.floor(Math.random()*4 + 1);
 
-        if((second%10)==0 && counters==1){swapTiles("cell"+rowswap1+colswap1,"cell"+rowswap2+colswap2)
+        if((second%5)==0 && counters==1){swapTiles("cell"+rowswap1+colswap1,"cell"+rowswap2+colswap2)
       };
       }
     }
       function challengealert(){
         counters=1;
-        alert("After the game starts , at every 10 seconds , 2 tiles will swap randomly " +"\r\n"  +"\r\n" +"                              "+ "Show your skills here");
+        alert("After the game starts , at every 5 seconds , 2 tiles will swap randomly " +"\r\n"  +"\r\n" +"                              "+ "Show your skills here");
      
     }
      function challengefix(){
