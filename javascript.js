@@ -203,9 +203,14 @@ for (var i = 1; i <= 4; i++) {
     win=0;
    if(seconds==0 && minutes==0 && hours==0){
      alert("Please start New Game");
-   } else{
-   alert("Congratulations , You solved the puzzle in"+" " + count +" "+"Moves" +"\r\n"+ "Time Taken :"+" " + displayHours + ":" + displayMinutes + ":" + displaySeconds);
-   refreshPage1();}
+   } else{if(counters==1){
+    alert("Booyah! , You solved the puzzle in challenge mode in "+" " + count +" "+"Moves" +"\r\n"+ "Time Taken :"+" " + displayHours + ":" + displayMinutes + ":" + displaySeconds);
+    refreshPage1();
+   }else{
+    alert("Congratulations!, You solved the puzzle in"+" " + count +" "+"Moves" +"\r\n"+ "Time Taken :"+" " + displayHours + ":" + displayMinutes + ":" + displaySeconds);
+    refreshPage1();
+   }
+  }
   }else{
     win=0;
   }
@@ -252,13 +257,13 @@ let counters=0;
         var rowswap2 =Math.floor(Math.random()*4 + 1);
         var colswap2 =Math.floor(Math.random()*4 + 1);
 
-        if((second%7)==0 && counters==1){swapTiles("cell"+rowswap1+colswap1,"cell"+rowswap2+colswap2)
+        if((second%10)==0 && counters==1){swapTiles("cell"+rowswap1+colswap1,"cell"+rowswap2+colswap2)
       };
       }
     }
       function challengealert(){
         counters=1;
-        alert("After the game starts , at every 7 seconds , 2 tiles will swap randomly " +"\r\n"  +"\r\n" +"                              "+ "Show your skills here");
+        alert("After the game starts , at every 10 seconds , 2 tiles will swap randomly " +"\r\n"  +"\r\n" +"                              "+ "Show your skills here");
      
     }
      function challengefix(){
