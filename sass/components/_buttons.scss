@@ -95,10 +95,18 @@ margin-left: 250px;
 .btn-new-game:hover{
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    @include respond(phone){
+        transform:none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
 }
 .btn-reset:hover{
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    @include respond(phone){
+        transform:none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
 }
 .btn1-background:link{
     background-color: rgb(255, 145, 0);
@@ -118,7 +126,7 @@ margin-left: 250px;
     transform: translateY(10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     @include respond(phone){
-        transform: translateY(-10px);
+        transform:none;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 }
@@ -157,7 +165,7 @@ margin-left: 250px;
   .dropdown-content {
     display: none;
     position:relative;
-    background-color: crimson;
+    background-color: rgb(245, 238, 238);
     margin-top: 0px;
     padding: 0px;
     width:125px;
@@ -172,18 +180,21 @@ margin-left: 250px;
      margin-top: 70px;
        font-size: 50%;
        width: 50%;
-     
+    
     }
    
    
   }
   
   .dropdown-content a {
-    color: white;
+    color: rgb(73, 70, 70);
    position: absolute;
    text-align: center;
     display: block;}
-  
+    .dropdown-content a:hover{
+        background-color: blanchedalmond;
+        background-size: 100% 100%;
+    }
  
   .dropdown:active .dropdown-content{
       display: block;
@@ -198,4 +209,6 @@ margin-left: 250px;
   }
   .show{
       display: block;
+      
   }
+  

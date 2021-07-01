@@ -501,10 +501,18 @@ html {
 .btn-new-game:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 600px) {
+    .btn-new-game:hover {
+      transform: none;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); } }
 
 .btn-reset:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 600px) {
+    .btn-reset:hover {
+      transform: none;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); } }
 
 .btn1-background:link {
   background-color: #ff9100;
@@ -524,7 +532,7 @@ html {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
   @media (max-width: 600px) {
     .btn1-background:hover {
-      transform: translateY(-10px);
+      transform: none;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); } }
 
 .container {
@@ -549,7 +557,7 @@ html {
 .dropdown-content {
   display: none;
   position: relative;
-  background-color: crimson;
+  background-color: #f5eeee;
   margin-top: 0px;
   padding: 0px;
   width: 125px;
@@ -564,10 +572,14 @@ html {
       width: 50%; } }
 
 .dropdown-content a {
-  color: white;
+  color: #494646;
   position: absolute;
   text-align: center;
   display: block; }
+
+.dropdown-content a:hover {
+  background-color: blanchedalmond;
+  background-size: 100% 100%; }
 
 .dropdown:active .dropdown-content {
   display: block; }
