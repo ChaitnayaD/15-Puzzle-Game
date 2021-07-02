@@ -263,7 +263,7 @@ let counters=0;
     }
       function challengealert(){
         counters=1;
-        alert("After the game starts , at every 5 seconds , 2 tiles will swap randomly " +"\r\n"  +"\r\n" +"                              "+ "Show your skills here");
+        alert("After the game starts , at every 5 seconds , 2 tiles will swap randomly " +"\r\n"  +"\r\n" +"     "+ "Show your skills here");
      
     }
      function challengefix(){
