@@ -15,6 +15,7 @@ html{
      background-size: cover;
      width: 152rem;
      height: 150em;
+    
     @include respond(phone){
      width: 100%;
     

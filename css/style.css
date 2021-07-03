@@ -139,6 +139,7 @@ html {
   font-size: 6.8rem;
   font-weight: 700;
   width: auto;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   background-image: linear-gradient(to right top, rgba(150, 237, 245, 0.2), rgba(167, 41, 41, 0.8)); }
   @media (max-width: 600px) {
     .header {
@@ -175,7 +176,8 @@ html {
   @media (max-width: 600px) {
     .copyright {
       margin-top: 5rem;
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      font-family: "Comic Sans MS", cursive, sans-serif; } }
 
 .table {
   display: table; }
